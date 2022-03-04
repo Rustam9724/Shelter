@@ -91,6 +91,11 @@ header .container nav ul a:hover {
 main {
   margin-top: -180px;
 }
+main .__heading {
+  font: 400 35px/45.5px Georgia;
+  color: #545454;
+  letter-spacing: 0.06em;
+}
 
 .start-screen {
   padding-top: 240px;
@@ -128,4 +133,35 @@ main {
   background: #F1CDB3;
   border-radius: 100px;
   letter-spacing: 0.06em;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 588px;
+  -webkit-column-gap: 120px;
+          column-gap: 120px;
+}
+.about .container .about__pets {
+  min-height: 408px;
+  margin-top: 80px;
+}
+.about .container .about__text {
+  margin-top: 94px;
+  width: 430px;
+}
+.about .container .about__text > *:not(:last-child) {
+  margin-bottom: 25px;
+}
+.about .container .about__text .about__text__heading {
+  width: 370px;
+}
+.about .container .about__text .about__text__sub-heading {
+  width: 100%;
+  font: 400 15px/24px Arial;
+  color: #4C4C4C;
 }

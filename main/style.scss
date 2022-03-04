@@ -91,6 +91,12 @@ header {
 
 main {
     margin-top: -180px;
+
+    .__heading {
+        font: 400 35px/45.5px Georgia;
+        color: #545454;
+        letter-spacing: 0.06em;
+    }
 }
 
 .start-screen {
@@ -130,4 +136,38 @@ main {
             }
         }
     } 
+}
+
+.about {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        min-height: 588px;
+        column-gap: 120px;
+
+        .about__pets {
+            min-height: 408px;
+            margin-top: 80px;
+        }
+
+        .about__text {
+            margin-top: 94px;
+            width: 430px;
+
+            & > *:not(:last-child) {
+                margin-bottom: 25px;
+            }
+
+            .about__text__heading {
+                width: 370px;
+            }
+
+            .about__text__sub-heading {
+                width: 100%;
+                font: 400 15px/24px Arial;
+                color: #4C4C4C;
+            }
+        }
+    }
 }
